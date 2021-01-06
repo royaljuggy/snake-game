@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Snake Game</title>
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">Snake Game</h1>
+            
+            <div class="speed-container">
+                <label>Speed (in ms; optional)</label>
+                <input type="text" id="speed">
+            </div>
+            
+            <div class="hardmode-container">
+                <label>Hard mode?</label>
+                <input type="checkbox" id="hard-mode">
+            </div>
+
+            <button type="button" id="start">Start New Game</button>
+            <h2 class="score-header">Score: <span id="score"></span></h2>
+            <div class="grid">
+                <label id="game-over">Game over!</label>
+            </div>
+        </div>  
+        <script src="js/index.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,76 @@
+:root {
+    --apple-background: blue;
+}
+
+html, body {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    border: red 10px solid;
+    border-radius: 5px;
+    background-color: lightblue;
+}
+
+.title,
+.score-header {
+    text-align: center;
+    margin: 25px;
+}
+
+.hardmode-container,
+.speed-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hardmode-container *,
+.speed-container * {
+    margin-right: 6px;
+    margin-bottom: 5px;
+}
+
+#game-over {
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: none;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.grid {
+    width: 200px;
+    height: 200px;
+    border: #000 2px solid;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.square {
+    width: 20px;
+    height: 20px;
+}
+
+.snake {
+    background-color: green;
+}
+
+.apple {
+    background-color: var(--apple-background);
+}
+
+#start {
+    display: inline-block;
+    transform: translateX(-50%);
+    margin-left: 50%;
+    margin-top: 10px;
+}
