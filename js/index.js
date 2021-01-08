@@ -45,7 +45,7 @@ function startGame() {
     gameOverScreen.style.display = 'none';
 
     const speed = document.querySelector("#speed");
-    if (parseInt(speed.value)) {
+    if (parseInt(speed.value) && (parseInt(speed.value) > 0)) {
         intervalTime = parseInt(speed.value);
     } else {
         intervalTime = 750;
@@ -74,6 +74,7 @@ function move() {
         
         // Clear game screen if hardmode, show game over
         currentSnake.forEach(index => squares[index].classList.remove('snake'));
+        currentSnake = [];
         squares[appleIndex].classList.remove('apple');
         gameOverScreen.style.display = 'block';
         
